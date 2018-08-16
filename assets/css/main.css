@@ -30,6 +30,22 @@ a {
     display: flex;
     flex-direction: row;
 }
+.txt-center {
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--main-bg-color);
+    color: #ffffff;
+    padding: 7px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #7A1903;
+}
 
 header .row {
     justify-content: space-between;
@@ -44,7 +60,34 @@ header {
     left: 0;
 }
 
+section.featuredImg {
+    min-height: calc(90vh - 85px);
+    background-size: 100%;
+    background: url("../images/featuredImage.jpg") no-repeat top center;
+}
+
+section.featuredImg.row {
+    align-items: center;
+}
+section.featuredImg h1, section.featuredImg h3 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #000;
+}
+section.featuredImg h1 {
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+section.featuredImg h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
 @media screen and (min-width: 320px) {
+    body {
+        padding-top: 85px;
+    }
     .container {
         width: 100%;
     }
@@ -55,7 +98,7 @@ header {
     .toggleMenu {
         align-self: center;
         position: relative;
-        padding-top: 12px;
+        padding-top: 0;
         z-index: 1;
         display: block;
         -webkit-user-select: none;
@@ -110,7 +153,7 @@ header {
         width: 200px;
         top: -30px;
         right: -15px;
-        padding: 70px 50px 50px;
+        padding: 70px 25px 25px;
         min-height: 100vh;
         background: var(--main-bg-color);
         list-style-type: none;
@@ -120,7 +163,23 @@ header {
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     .toggleMenu ul li {
-        padding: 10px 0;
+        position: relative;
+        padding: 14px 5px 14px 5px;
+    }
+    .toggleMenu ul li:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        width: 0;
+        transform-origin: center;
+        transition: width 0.3s;
+    }
+    .toggleMenu ul li:hover:after, .toggleMenu ul li.active:after {
+        width: 100%;
     }
     .toggleMenu ul li a {
         font-size: 16px;
