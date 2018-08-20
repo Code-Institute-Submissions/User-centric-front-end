@@ -1,6 +1,9 @@
 :root {
     --main-bg-color: #A72608;
     --main-txt-color: #95989A;
+    --footer-bg-color: #C0C0C0;
+    --footer-txt-color: #5E5D5D;
+    --mint-bg-color: #86A397;
 }
 /* var(--main-bg-color);  */
 *, :after, :before {
@@ -105,8 +108,9 @@ section.intro .col {
 section.intro .cnt {
     position: absolute;
     z-index: 8;
-    top: 15px;
+    top: 50%;
     left: 15px;
+    transform: translateY(-50%);
     color: #ffffff;
     width: calc(100% - 30px);
 }
@@ -114,6 +118,49 @@ section.intro .cnt {
 section.intro .cnt .btn {
     display: inline-block;
     margin-top: 15px;
+}
+
+section.band .title {
+    text-align: center;
+}
+
+section.band .title h2 {
+    color: var(--main-bg-color);
+}
+
+section.band .title h4 {
+    color: var(--main-txt-color);
+    font-weight: 400;
+}
+
+.card {
+    border: 1px solid var(--main-txt-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    color: #ffffff;
+    margin-top: -5px;
+    background-color: var(--main-bg-color);
+}
+
+.card .card-body p {
+    font-weight: 600;
+}
+
+.card .card-body p span {
+    display: block;
+    font-weight: 300;
 }
 
 @media screen and (min-width: 320px) {
@@ -220,12 +267,16 @@ section.intro .cnt .btn {
     .toggleMenu input:checked ~ .menu {
         transform: none;
     }
-    .col.half {
+    .col.half, .col.oneFourth {
         flex-basis: 100%;
         max-width: 100%;
     }
 
     section.intro img {
         min-height: 400px;
+    }
+
+    section.band .col {
+        margin-bottom: 30px;
     }
 }
