@@ -163,6 +163,36 @@ section.band .title h4 {
     font-weight: 300;
 }
 
+footer .cta {
+    background-color: var(--mint-bg-color);
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+footer .cta h3 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+footer .main {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-txt-color);
+    padding: 30px 0;
+}
+
+footer .main a {
+    color: var(--footer-txt-color);
+    font-weight: 600;
+}
+footer .main .socialMedia {
+    margin: 0 -10px;
+}
+footer .main .socialMedia img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
 @media screen and (min-width: 320px) {
     body {
         padding-top: 85px;
@@ -267,7 +297,7 @@ section.band .title h4 {
     .toggleMenu input:checked ~ .menu {
         transform: none;
     }
-    .col.half, .col.oneFourth {
+    .col.half, .col.oneFourth, footer .col {
         flex-basis: 100%;
         max-width: 100%;
     }
