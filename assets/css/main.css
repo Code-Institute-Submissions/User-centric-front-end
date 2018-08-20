@@ -27,7 +27,6 @@ a {
     text-decoration: none;
 }
 .container {
-    width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -108,11 +107,10 @@ section.intro .col {
 section.intro .cnt {
     position: absolute;
     z-index: 8;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
+    top: 30px;
+    left: 30px;
     color: #ffffff;
-    width: calc(100% - 30px);
+    width: calc(100% - 60px);
 }
 
 section.intro .cnt .btn {
@@ -145,15 +143,17 @@ section.band .title h4 {
 }
 
 .card .card-body {
-    display: flex;
-    justify-content: space-between;
     padding: 0 10px;
-    align-items: center;
     color: #ffffff;
     margin-top: -5px;
     background-color: var(--main-bg-color);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
+.card .card-body .row {
 
+}
 .card .card-body p {
     font-weight: 600;
 }
@@ -171,13 +171,28 @@ footer .cta {
 
 footer .cta h3 {
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 0;
+}
+
+footer .cta a {
+    display: inline-flex;
+}
+
+footer .cta .row {
+    justify-content: center;
+    align-content: center;
 }
 
 footer .main {
     background-color: var(--footer-bg-color);
     color: var(--footer-txt-color);
     padding: 30px 0;
+}
+
+footer .main h4 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 footer .main a {
@@ -198,7 +213,7 @@ footer .main .socialMedia img {
         padding-top: 85px;
     }
     .container {
-        width: 100%;
+        max-width: 100%;
     }
     .logo img {
         width: 100px;
@@ -297,16 +312,151 @@ footer .main .socialMedia img {
     .toggleMenu input:checked ~ .menu {
         transform: none;
     }
-    .col.half, .col.oneFourth, footer .col {
+    .intro .col, section.band .col, footer .col {
         flex-basis: 100%;
         max-width: 100%;
     }
-
+    footer .cta .col:first-child {
+        margin-bottom: 15px;
+    }
     section.intro img {
         min-height: 400px;
+        max-height: 595px;
     }
 
     section.band .col {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    section.band .row {
+        margin: 0 -15px;
+    }
+    section.band .col {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 0 15px;
+    }
+    section.band .card > img {
+        min-height: 267px;
+    }
+    footer .main .col {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+    footer .main .col:first-child {
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+    footer .main .col:nth-child(2) {
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .intro .col {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    footer .cta .col {
+        padding: 0 15px;
+    }
+}
+@media screen and (min-width: 740px) {
+    footer .cta .row {
+        align-content: center;
+    }
+    footer .cta .col:nth-child(1) {
+        flex-basis: 70%;
+        max-width: 70%;
+        margin-bottom: 0;
+    }
+    footer .cta .col:nth-child(2) {
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer .main .col:nth-child(1) {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    footer .main .col:nth-child(2) {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+    footer .main .col:nth-child(3) {
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    header .container {
+        max-width: 100%;
+    }
+
+    section.band .col {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    section.band .card > img {
+        min-height: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, header .container  {
+        max-width: 1170px;
+    }
+    footer .main .col {
+        flex-basis: 33.3333%;
+        max-width: 33.3333%;
+    }
+    .toggleMenu span, .toggleMenu input {
+        display: none;
+    }
+    header .row {
+        align-items: center;
+    }
+    .toggleMenu {
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+    .toggleMenu .menu {
+        position: relative;
+        width: 100%;
+        padding: 0px 0 0 0;
+        min-height: auto;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        top: 0;
+        right: 0;
+        transform: none;
+        margin: 0 -10px 0 -10px;
+    }
+    .toggleMenu .menu li {
+        margin: 0 10px;
+    }
+    .toggleMenu .menu li a {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .logo img {
+        width: 146px;
+        height: 73px;
+    }
+    body {
+        padding-top: 105px;
     }
 }
