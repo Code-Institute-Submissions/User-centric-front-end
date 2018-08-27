@@ -61,8 +61,11 @@ Pure HTML5 and CSS3 without framework
 
 ## Deployment
 
-The website has been deployed to github pages
+The website has been deployed to [github pages](https://player64.github.io/User-centric-front-end/index.html)
 
+## Testing
+- The website has been passed [HTML validation](https://validator.w3.org/)
+- The website has been tested on various screen sizes
 
 ## Credits
 

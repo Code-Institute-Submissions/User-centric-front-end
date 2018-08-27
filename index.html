@@ -8,169 +8,172 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="home">
-<main class="page">
-    <header>
-        <div class="container">
-            <div class="row">
-                <a href="/User-centric-front-end/index.html" class="logo">
-                    <img src="assets/images/logo.svg" width="146" height="73" alt="1960's Rock Band"/>
-                </a>
-                <nav class="toggleMenu">
-                    <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="menu">
-                        <li class="active">
-                            <a href="/User-centric-front-end/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/music.html">Our music</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/about.html">About us</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/contact.html">Contact us</a>
-                        </li>
-                    </ul>
-                </nav>
+<!-- page header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <a href="/User-centric-front-end/index.html" class="logo">
+                <img src="assets/images/logo.svg" width="146" height="73" alt="1960's Rock Band"/>
+            </a>
+            <nav class="toggleMenu">
+                <!-- input used to open mobile menu -->
+                <input type="checkbox"/>
+                <!-- hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- menu list -->
+                <ul class="menuList">
+                    <li class="active menuListItem">
+                        <a href="/User-centric-front-end/index.html" class="menuListLink">Home</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/music.html" class="menuListLink">Our music</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/about.html" class="menuListLink">About us</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/gallery.html" class="menuListLink">Gallery</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/contact.html" class="menuListLink">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- featured img -->
+<section class="featuredImg row">
+    <div class="container">
+        <div class="txt-center">
+            <h1>50 years experience </h1>
+            <h3>of performing live at numerous events around the world</h3>
+            <a href="/User-centric-front-end/contact.html" class="btn">hire us</a>
+        </div>
+    </div>
+</section>
+<!-- two columns introduction -->
+<section class="intro">
+    <div class="row">
+        <div class="col">
+            <img src="assets/images/our-music-bg-sm.jpg" alt="Our music"/>
+            <article class="introductionContent">
+                <h2>Our latest music</h2>
+                <audio controls>
+                    <source src="assets/audio/Clarksville.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p><a href="/User-centric-front-end/music.html" class="btn">find out more</a></p>
+            </article>
+        </div>
+        <div class="col">
+            <img src="assets/images/about.jpg" alt="Our music"/>
+            <article class="introductionContent">
+                <h2>About us</h2>
+                <p> Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor
+                    diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus,
+                    pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer.
+                    Quisque cursus et, porttitor risus.</p>
+                <a href="/User-centric-front-end/about.html" class="btn">read more</a>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="bandListMembers">
+    <div class="container">
+        <article class="title">
+            <h2>MEET US</h2>
+            <h4 class="subTitle">Cum mazim officiis id. Duo theophrastus signiferumque id, sea quodsi audire
+                alienum at. Quodsi petentium conceptam eos at. Quidam vidisse.</h4>
+        </article>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/dj.jpg">
+                    <div class="card-body">
+                        <p>Mick <span>Vocal</span></p>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
+                                         alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/md.jpg">
+                    <div class="card-body">
+                        <p>Rick <span>Bass</span></p>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
+                                         alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/mn.jpg">
+                    <div class="card-body">
+                        <p>Mohsen <span>Drums</span></p>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
+                                         alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/pt.jpg">
+                    <div class="card-body">
+                        <p>Steve <span>Guitar</span></p>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
+                                         alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-    <article>
-        <section class="featuredImg row">
-            <div class="container">
-                <div class="txt-center">
-                    <h1>50 years experience </h1>
-                    <h3>of performing live at numerous events around the world</h3>
-                    <a href="/User-centric-front-end/contact.html" class="btn">hire us</a>
-                </div>
-            </div>
-        </section>
-        <section class="intro">
+    </div>
+</section>
+<!-- footer -->
+<footer>
+    <section class="callToAction">
+        <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="assets/images/our-music-bg-sm.jpg" alt="Our music"/>
-                    <div class="cnt">
-                        <h2>Our latest music</h2>
-                        <audio controls>
-                            <source src="assets/audio/Clarksville.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <p><a href="/User-centric-front-end/music.html" class="btn">find out more</a></p>
+                    <h3>Are you looking for a band for a wedding or an event?</h3>
+                </div>
+                <div class="col">
+                    <a href="/User-centric-front-end/contact.html" class="btn white">contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/images/logo-footer.svg" width="136" height="69" alt="">
+                    <p class="copyright">Copyright &copy; 2018</p>
+                </div>
+                <div class="col">
+                    <h4>CONNECT WITH US</h4>
+                    <div class="row socialMedia">
+                        <a href="#" class="spotify"><img src="assets/images/icons/spotify.svg" alt="Spotify"></a>
+                        <a href="#" class="twitter"><img src="assets/images/icons/twitter-square.svg" alt="Twitter"></a>
+                        <a href="#" class="facebook"><img src="assets/images/icons/facebook-square.svg"
+                                                          alt="Facebook"></a>
+                        <a href="#" class="vimeo"><img src="assets/images/icons/vimeo-square.svg" alt="Vimeo"></a>
+                        <a href="#" class="youtube"><img src="assets/images/icons/youtube-square.svg" alt="Youtube"></a>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/about.jpg" alt="Our music"/>
-                    <div class="cnt">
-                        <h2>About us</h2>
-                        <p> Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor
-                            diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus,
-                            pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer.
-                            Quisque cursus et, porttitor risus.</p>
-                        <a href="/User-centric-front-end/about.html" class="btn">read more</a>
-                    </div>
+                    <h4>CONTACT US</h4>
+                    <p>
+                        Manager - Ross Smith<br>
+                        Phone - <a href="tel:+353871112233">087 111 22 33</a><br>
+                        Email - <a href="mailto:ross@1960s.com">ross@1960s.com</a></p>
                 </div>
             </div>
-        </section>
-        <section class="band">
-            <div class="container">
-                <div class="title">
-                    <h2>MEET US</h2>
-                    <h4 class="subTitle">Cum mazim officiis id. Duo theophrastus signiferumque id, sea quodsi audire
-                        alienum at. Quodsi petentium conceptam eos at. Quidam vidisse.</h4>
-                </div>
-                <div class="row">
-                    <div class="col oneFourth">
-                        <div class="card">
-                            <img src="assets/images/dj.jpg">
-                            <div class="card-body">
-                                <p>Mick <span>Vocal</span></p>
-                                <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
-                                                 alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col oneFourth">
-                        <div class="card">
-                            <img src="assets/images/md.jpg">
-                            <div class="card-body">
-                                <p>Rick <span>Bass</span></p>
-                                <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
-                                                 alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col oneFourth">
-                        <div class="card">
-                            <img src="assets/images/mn.jpg">
-                            <div class="card-body">
-                                <p>Mohsen <span>Drums</span></p>
-                                <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
-                                                 alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col oneFourth">
-                        <div class="card">
-                            <img src="assets/images/pt.jpg">
-                            <div class="card-body">
-                                <p>Steve <span>Guitar</span></p>
-                                <a href="#"><img src="assets/images/icons/twitter.svg" width="25" height="25"
-                                                 alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </article>
-    <footer>
-        <section class="cta">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3>Are you looking for a band for a wedding or an event?</h3>
-                    </div>
-                    <div class="col">
-                        <a href="/User-centric-front-end/contact.html" class="btn white">contact us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="main">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="assets/images/logo-footer.svg" width="136" height="69" alt="">
-                        <p class="copyright">Copyright &copy; 2018</p>
-                    </div>
-                    <div class="col">
-                        <h4>CONNECT WITH US</h4>
-                        <div class="row socialMedia">
-                            <a href="#" class="spotify"><img src="assets/images/icons/spotify.svg" alt="Spotify"></a>
-                            <a href="#" class="twitter"><img src="assets/images/icons/twitter-square.svg" alt="Twitter"></a>
-                            <a href="#" class="facebook"><img src="assets/images/icons/facebook-square.svg"
-                                                              alt="Facebook"></a>
-                            <a href="#" class="vimeo"><img src="assets/images/icons/vimeo-square.svg" alt="Vimeo"></a>
-                            <a href="#" class="youtube"><img src="assets/images/icons/youtube-square.svg" alt="Youtube"></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h4>CONTACT US</h4>
-                        <p>
-                            Manager - Ross Smith<br>
-                            Phone - <a href="tel:+353871112233">087 111 22 33</a><br>
-                            Email - <a href="mailto:ross@1960s.com">ross@1960s.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</main>
+        </div>
+    </section>
+</footer>
 </body>
 </html>

@@ -7,7 +7,7 @@
     --body-bg-color: #E9E9E9;
     --body-txt-color: #707070;
 }
-
+/* initial scaffolding */
 *, :after, :before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -97,7 +97,7 @@ header {
     left: 0;
     z-index: 9;
 }
-
+/* background picture definition fot featuredImg section */
 section.featuredImg {
     min-height: 150px;
     background: url("../images/our-music-bg.jpg") no-repeat fixed center center;
@@ -137,25 +137,25 @@ section.featuredImg h1 {
     margin-top: 0;
 }
 
-section.featuredImg h3 {
+.featuredImg h3 {
     font-size: 20px;
     margin-top: 10px;
 }
 
-section.intro {
+.intro {
     clear: both;
 }
 
-section.intro img {
+.intro img {
     width: 100%;
     height: auto;
 }
 
-section.intro .col {
+.intro .col {
     position: relative;
 }
 
-section.intro .cnt {
+.intro .introductionContent {
     position: absolute;
     z-index: 8;
     top: 0;
@@ -167,20 +167,20 @@ section.intro .cnt {
     background-color: rgba(0, 0, 0, .5);
 }
 
-section.intro .cnt .btn {
+.intro .introductionContent .btn {
     display: inline-block;
     margin-top: 15px;
 }
-
-section.band .title {
+/* member profiles */
+.bandListMembers .title {
     text-align: center;
 }
 
-section.band .title h2 {
+.bandListMembers .title h2 {
     color: var(--main-bg-color);
 }
 
-section.band .title h4 {
+.bandListMembers .title h4 {
     color: var(--main-txt-color);
     font-weight: 400;
 }
@@ -214,24 +214,24 @@ section.band .title h4 {
     display: block;
     font-weight: 300;
 }
-
-footer .cta {
+/* footer styles */
+footer .callToAction {
     background-color: var(--mint-bg-color);
     color: #ffffff;
     padding: 15px 0;
 }
 
-footer .cta h3 {
+footer .callToAction h3 {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
 }
 
-footer .cta a {
+footer .callToAction a {
     display: inline-flex;
 }
 
-footer .cta .row {
+footer .callToAction .row {
     justify-content: center;
     align-content: center;
 }
@@ -266,11 +266,11 @@ footer .main a:hover {
     margin: 0 10px;
 }
 
-.home section.band {
+.home .bandListMembers {
     margin-bottom: 50px;
 }
 
-/* REST PAGES */
+/* pages with sidebar */
 main.container {
     margin: 30px auto;
 }
@@ -305,7 +305,7 @@ main.container .content {
     border-bottom: 1px solid var(--body-bg-color);
 }
 
-.sidebar section.social {
+.sidebar .social {
     border-bottom: none;
 }
 
@@ -352,19 +352,19 @@ main.container .content {
     margin-top: 0;
 }
 
-article.content .insideContent {
+.content .insideContent {
     padding: 20px 0;
 }
 
-article.content .insideContent:first-child {
+.content .insideContent:first-child {
      padding-top: 0;
 }
 
-article.content .insideContent:last-child {
+.content .insideContent:last-child {
     padding-bottom: 0;
 }
 
-article.content > h2 {
+.content > h2 {
     margin-top: 0;
 }
 
@@ -382,7 +382,7 @@ article.content > h2 {
     flex-basis: 100%;
 }
 
-/* SM SCREENS STYLES */
+/* sm styles definition */
 body {
     padding-top: 85px;
 }
@@ -457,7 +457,7 @@ body {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-.toggleMenu .menu {
+.toggleMenu .menuList {
     position: absolute;
     width: 200px;
     top: -30px;
@@ -499,16 +499,16 @@ body {
     color: #ffffff;
 }
 
-.toggleMenu input:checked ~ .menu {
+.toggleMenu input:checked ~ .menuList {
     transform: none;
 }
 
-.intro .col, section.band .col, footer .col {
+.intro .col, .bandListMembers .col, footer .col {
     flex-basis: 100%;
     max-width: 100%;
 }
 
-footer .cta .col:first-child {
+footer .callToAction .col:first-child {
     margin-bottom: 15px;
 }
 
@@ -516,12 +516,12 @@ footer .main .col {
     margin-bottom: 30px;
 }
 
-section.intro img, section.intro .cnt {
+.intro img, .intro .cnt {
     min-height: 400px;
     max-height: 100%;
 }
 
-section.band .col {
+.bandListMembers .col {
     margin-bottom: 30px;
 }
 
@@ -535,6 +535,7 @@ section.band .col {
 }
 
 .ourMusic .track .Title {
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -547,7 +548,7 @@ section.band .col {
     max-width: 100%;
 }
 
-.content .bandHistory .row {
+.content .bandListMembersHistory .row {
     justify-content: space-between;
 }
 
@@ -574,20 +575,20 @@ section.band .col {
 .horizontalForm .row.submitForm .col:first-child {
     display: none;
 }
+/* medium-small styles definition */
 
-/* END SM SCREENS */
 @media screen and (min-width: 375px) {
     .ourMusic .track .audioControls audio {
         max-width: initial;
     }
 }
-
+/* medium styles definition */
 @media screen and (min-width: 640px) {
-    section.band .row {
+    .bandListMembers .row {
         margin: 0 -15px;
     }
 
-    section.band .col {
+    .bandListMembers .col {
         flex-basis: 50%;
         max-width: 50%;
         padding: 0 15px;
@@ -632,35 +633,36 @@ section.band .col {
         display: flex;
     }
 }
-
+/* large mobile styles definition */
 @media screen and (min-width: 700px) {
     .intro .col {
         flex-basis: 50%;
         max-width: 50%;
     }
 
-    footer .cta .col {
+    footer .callToAction .col {
         padding: 0 15px;
     }
 }
 
 @media screen and (min-width: 740px) {
-    footer .cta .row {
+    footer .callToAction .row {
         align-content: center;
+        align-items: center;
     }
 
-    footer .cta .col:nth-child(1) {
+    footer .callToAction .col:nth-child(1) {
         flex-basis: 70%;
         max-width: 70%;
         margin-bottom: 0;
     }
 
-    footer .cta .col:nth-child(2) {
+    footer .callToAction .col:nth-child(2) {
         flex-basis: 30%;
         max-width: 30%;
     }
 }
-
+/* tablet styles definition */
 @media screen and (min-width: 768px) {
     footer .main .col {
         margin-bottom: 0px;
@@ -703,7 +705,7 @@ section.band .col {
         max-width: 280px;
     }
 }
-
+/* tablet medium styles definition */
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
@@ -713,12 +715,12 @@ section.band .col {
         max-width: 100%;
     }
 
-    section.band .col {
+    .bandListMembers .col {
         flex-basis: 25%;
         max-width: 25%;
     }
 
-    section.intro img {
+    .intro img {
         height: 90%;
     }
 
@@ -738,7 +740,7 @@ section.band .col {
         max-width: initial;
     }
 
-    .about section.band .col {
+    .about .bandListMembers .col {
         flex-basis: 50%;
         max-width: 50%;
     }
@@ -754,7 +756,7 @@ section.band .col {
         max-width: 50%;
     }
 }
-
+/* desktop styles definition */
 @media (min-width: 1200px) {
     .container, header .container {
         max-width: 1170px;
@@ -778,7 +780,7 @@ section.band .col {
         max-width: 60%;
     }
 
-    .toggleMenu .menu {
+    .toggleMenu .menuList {
         position: relative;
         width: 100%;
         padding: 0px 0 0 0;
@@ -792,11 +794,11 @@ section.band .col {
         margin: 0 -10px 0 -10px;
     }
 
-    .toggleMenu .menu li {
+    .toggleMenu .menuList li {
         margin: 0 10px;
     }
 
-    .toggleMenu .menu li a {
+    .toggleMenu .menuList li a {
         font-size: 18px;
         font-weight: 600;
     }

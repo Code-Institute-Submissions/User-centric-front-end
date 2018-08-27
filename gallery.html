@@ -8,90 +8,131 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="gallery">
-<main class="page">
-    <header>
+<!-- page header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <a href="/User-centric-front-end/index.html" class="logo">
+                <img src="assets/images/logo.svg" width="146" height="73" alt="1960's Rock Band"/>
+            </a>
+            <nav class="toggleMenu">
+                <!-- input used to open mobile menu -->
+                <input type="checkbox"/>
+                <!-- hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- menu list -->
+                <ul class="menuList">
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/index.html" class="menuListLink">Home</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/music.html" class="menuListLink">Our music</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/about.html" class="menuListLink">About us</a>
+                    </li>
+                    <li class="active menuListItem">
+                        <a href="/User-centric-front-end/gallery.html" class="menuListLink">Gallery</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/contact.html" class="menuListLink">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- featured img -->
+<section class="featuredImg row">
+    <div class="container">
+        <h1>Gallery</h1>
+    </div>
+</section>
+<!-- main content -->
+<main class="container">
+    <div class="row">
+        <div class="col content">
+            <h2>LATEST PICTURES</h2>
+            <section class="imgGallery">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/images/gallery-1.jpg" alt="Gallery - 1">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-2.jpg" alt="Gallery - 2">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-3.jpg" alt="Gallery - 3">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-4.jpg" alt="Gallery - 4">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-5.jpg" alt="Gallery - 5">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-6.jpg" alt="Gallery - 6">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-7.jpg" alt="Gallery - 7">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-8.jpg" alt="Gallery - 8">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/gallery-9.jpg" alt="Gallery - 9">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- sidebar -->
+        <aside class="col sidebar">
+            <section class="contact">
+                <h4>Contact us</h4>
+                <p>
+                    Manager - Ross Smith<br>
+                    Phone - <a href="tel:+353871112233">087 111 22 33</a><br>
+                    Email - <a href="mailto:ross@1960s.com">ross@1960s.com</a></p>
+            </section>
+            <section class="social">
+                <h4>Connect with us</h4>
+                <div class="row socialMedia">
+                    <a href="#" class="spotify"><img src="assets/images/icons/spotify.svg" alt="Spotify"></a>
+                    <a href="#" class="twitter"><img src="assets/images/icons/twitter-square.svg" alt="Twitter"></a>
+                    <a href="#" class="facebook"><img src="assets/images/icons/facebook-square.svg"
+                                                      alt="Facebook"></a>
+                    <a href="#" class="vimeo"><img src="assets/images/icons/vimeo-square.svg" alt="Vimeo"></a>
+                    <a href="#" class="youtube"><img src="assets/images/icons/youtube-square.svg" alt="Youtube"></a>
+                </div>
+            </section>
+        </aside>
+    </div>
+</main>
+<!-- footer -->
+<footer>
+    <section class="callToAction">
         <div class="container">
             <div class="row">
-                <a href="/User-centric-front-end/index.html" class="logo">
-                    <img src="assets/images/logo.svg" width="146" height="73" alt="1960's Rock Band"/>
-                </a>
-                <nav class="toggleMenu">
-                    <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="menu">
-                        <li>
-                            <a href="/User-centric-front-end/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/music.html">Our music</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/about.html">About us</a>
-                        </li>
-                        <li class="active">
-                            <a href="/User-centric-front-end/gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/contact.html">Contact us</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="col">
+                    <h3>Are you looking for a band for a wedding or an event?</h3>
+                </div>
+                <div class="col">
+                    <a href="/User-centric-front-end/contact.html" class="btn white">contact us</a>
+                </div>
             </div>
         </div>
-    </header>
-    <section class="featuredImg row">
-        <div class="container">
-            <h1>Gallery</h1>
-        </div>
     </section>
-    <main class="container">
-        <div class="row">
-            <article class="col content">
-                <h2>LATEST PICTURES</h2>
-                <section class="imgGallery">
-                    <div class="row">
-                        <div class="col">
-                            <img src="assets/images/gallery-1.jpg" alt="Gallery - 1">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-2.jpg" alt="Gallery - 2">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-3.jpg" alt="Gallery - 3">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-4.jpg" alt="Gallery - 4">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-5.jpg" alt="Gallery - 5">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-6.jpg" alt="Gallery - 6">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-7.jpg" alt="Gallery - 7">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-8.jpg" alt="Gallery - 8">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/gallery-9.jpg" alt="Gallery - 9">
-                        </div>
-                    </div>
-                </section>
-            </article>
-            <aside class="col sidebar">
-                <section class="contact">
-                    <h4>Contact us</h4>
-                    <p>
-                        Manager - Ross Smith<br>
-                        Phone - <a href="tel:+353871112233">087 111 22 33</a><br>
-                        Email - <a href="mailto:ross@1960s.com">ross@1960s.com</a></p>
-                </section>
-                <section class="social">
-                    <h4>Connect with us</h4>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/images/logo-footer.svg" width="136" height="69" alt="">
+                    <p class="copyright">Copyright &copy; 2018</p>
+                </div>
+                <div class="col">
+                    <h4>CONNECT WITH US</h4>
                     <div class="row socialMedia">
                         <a href="#" class="spotify"><img src="assets/images/icons/spotify.svg" alt="Spotify"></a>
                         <a href="#" class="twitter"><img src="assets/images/icons/twitter-square.svg" alt="Twitter"></a>
@@ -100,52 +141,17 @@
                         <a href="#" class="vimeo"><img src="assets/images/icons/vimeo-square.svg" alt="Vimeo"></a>
                         <a href="#" class="youtube"><img src="assets/images/icons/youtube-square.svg" alt="Youtube"></a>
                     </div>
-                </section>
-            </aside>
+                </div>
+                <div class="col">
+                    <h4>CONTACT US</h4>
+                    <p>
+                        Manager - Ross Smith<br>
+                        Phone - <a href="tel:+353871112233">087 111 22 33</a><br>
+                        Email - <a href="mailto:ross@1960s.com">ross@1960s.com</a></p>
+                </div>
+            </div>
         </div>
-    </main>
-    <footer>
-        <section class="cta">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3>Are you looking for a band for a wedding or an event?</h3>
-                    </div>
-                    <div class="col">
-                        <a href="/User-centric-front-end/contact.html" class="btn white">contact us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="main">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="assets/images/logo-footer.svg" width="136" height="69" alt="">
-                        <p class="copyright">Copyright &copy; 2018</p>
-                    </div>
-                    <div class="col">
-                        <h4>CONNECT WITH US</h4>
-                        <div class="row socialMedia">
-                            <a href="#" class="spotify"><img src="assets/images/icons/spotify.svg" alt="Spotify"></a>
-                            <a href="#" class="twitter"><img src="assets/images/icons/twitter-square.svg" alt="Twitter"></a>
-                            <a href="#" class="facebook"><img src="assets/images/icons/facebook-square.svg"
-                                                              alt="Facebook"></a>
-                            <a href="#" class="vimeo"><img src="assets/images/icons/vimeo-square.svg" alt="Vimeo"></a>
-                            <a href="#" class="youtube"><img src="assets/images/icons/youtube-square.svg" alt="Youtube"></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h4>CONTACT US</h4>
-                        <p>
-                            Manager - Ross Smith<br>
-                            Phone - <a href="tel:+353871112233">087 111 22 33</a><br>
-                            Email - <a href="mailto:ross@1960s.com">ross@1960s.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</main>
+    </section>
+</footer>
 </body>
 </html>

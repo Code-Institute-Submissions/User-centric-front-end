@@ -8,47 +8,52 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="about">
-<main class="page">
-    <header>
-        <div class="container">
-            <div class="row">
-                <a href="/User-centric-front-end/index.html" class="logo">
-                    <img src="assets/images/logo.svg" width="146" height="73" alt="1960's Rock Band"/>
-                </a>
-                <nav class="toggleMenu">
-                    <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="menu">
-                        <li>
-                            <a href="/User-centric-front-end/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/music.html">Our music</a>
-                        </li>
-                        <li class="active">
-                            <a href="/User-centric-front-end/about.html">About us</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="/User-centric-front-end/contact.html">Contact us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+<!-- page header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <a href="/User-centric-front-end/index.html" class="logo">
+                <img src="assets/images/logo.svg" width="146" height="73" alt="1960's Rock Band"/>
+            </a>
+            <nav class="toggleMenu">
+                <!-- input used to open mobile menu -->
+                <input type="checkbox"/>
+                <!-- hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- menu list -->
+                <ul class="menuList">
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/index.html" class="menuListLink">Home</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/music.html" class="menuListLink">Our music</a>
+                    </li>
+                    <li class="active menuListItem">
+                        <a href="/User-centric-front-end/about.html" class="menuListLink">About us</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/gallery.html" class="menuListLink">Gallery</a>
+                    </li>
+                    <li class="menuListItem">
+                        <a href="/User-centric-front-end/contact.html" class="menuListLink">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+    <!-- featured img -->
     <section class="featuredImg row">
         <div class="container">
             <h1>About us</h1>
         </div>
     </section>
+    <!-- main content -->
     <main class="container">
         <div class="row">
-            <article class="col content">
+            <div class="col content">
                 <section class="/User-centric-front-end bandHistory">
                     <div class="row">
                         <div class="col">
@@ -63,7 +68,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="/User-centric-front-end band">
+                <section class="/User-centric-front-end bandListMembers">
                     <h2>OUR CREW</h2>
                     <div class="row">
                         <div class="col">
@@ -108,7 +113,8 @@
                         </div>
                     </div>
                 </section>
-            </article>
+            </div>
+            <!-- sidebar -->
             <aside class="col sidebar">
                 <section class="contact">
                     <h4>Contact us</h4>
@@ -131,8 +137,9 @@
             </aside>
         </div>
     </main>
+    <!-- footer -->
     <footer>
-        <section class="cta">
+        <section class="callToAction">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -173,6 +180,5 @@
             </div>
         </section>
     </footer>
-</main>
 </body>
 </html>
