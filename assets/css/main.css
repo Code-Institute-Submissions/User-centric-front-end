@@ -567,6 +567,24 @@ footer .main .col {
     max-width: 100%;
 }
 
+.content .imgGallery a {
+    display: block;
+    transition: all 0.3s;
+    transform-origin: center;
+}
+
+.content .imgGallery img {
+    transition: all 0.3s;
+}
+
+.content .imgGallery a:hover {
+    transform: scale(1.03);
+}
+
+.content .imgGallery a:hover img {
+    box-shadow: 1px 1px 15px var(--footer-txt-color);
+}
+
 .content .imgGallery .row .col img {
     width: 100%;
     height: auto;
