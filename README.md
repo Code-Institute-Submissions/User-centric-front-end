@@ -1,11 +1,11 @@
-# Website for rock band
+# Website for the rock band
 
 Static HTML website
  
 ## UX
 The band is a 1960’s rock band and have around 50 years experience of performing live at numerous events around the world. You have been given the following requirements after interviews with the client’s representatives:
 
-Their primary target audiences are their fans and potential fans who wish to use the site to see and hear clips from their back catalog, and any new material as it becomes available.
+Their primary target audiences are their fans and potential fans who wish to use the site to see and hear clips from their back catalogue, and any new material as it becomes available.
 
 Also, the band would like to use the site to showcase their music and publicise their availability to perform at events such as weddings and Christmas parties.
  
@@ -16,7 +16,7 @@ Also, the band would like to use the site to showcase their music and publicise 
 #### Home page
 The home page is an introduction for all pages
 
-Featured image with call to action
+Featured image with a call to action
 
 Latest music 
 
@@ -27,16 +27,16 @@ Band's member introduction
 #### Home page
 The home page is an introduction for all pages
 
-Featured image with call to action
+Featured image with a call to action
 
 Latest music 
 
 About us
 
-The footer consist contact information
+The footer consist of contact information
 
 #### Our music
-That page allow users play band's tracks directly in the browser
+That page allows users to play band's tracks directly in the browser
  
  #### About us 
  That page is showing the band history and band members with their pictures & Twitter link
@@ -48,7 +48,7 @@ That page allow users play band's tracks directly in the browser
   That page consists contact form and contact details
  
 ### Existing Features
-Latest music allow users play band's tracks directly in the browser
+Latest music allows users to play band's tracks directly in the browser
 
 ### Features Left to Implement
 - Contact form sending email
@@ -56,7 +56,7 @@ Latest music allow users play band's tracks directly in the browser
 
 ## Technologies Used
 
-Pure HTML5 and CSS3 without framework
+Pure HTML5 and CSS3 without any framework
 
 
 ## Deployment
@@ -70,4 +70,4 @@ The website has been deployed to [github pages](https://player64.github.io/User-
 ## Credits
 
 ### Media
-- The photos used in this site were obtained from [Free stock phots](https://www.pexels.com) 
+- The photos used in this site were obtained from [Free stock photos](https://www.pexels.com) 
